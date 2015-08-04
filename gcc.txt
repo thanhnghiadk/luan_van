@@ -1,0 +1,3 @@
+gcc -Wall -ggdb tutorial02.c -D_GNU_SOURCE=1 -D_REENTRANT -I/usr/local/include -I/usr/include/SDL   -c -o obj/tutorial02.o
+
+gcc -Wall -ggdb obj/tutorial02.o -pthread -L/usr/local/lib -lavformat -lavcodec -lx264 -lpthread -ldl -lvpx -lvorbisenc -lvorbis -ltheoraenc -ltheoradec -logg -lrtmp -lgnutls -lopencore-amrwb -lopencore-amrnb -lmp3lame -lfaac -lz -lswresample -lswscale -lavutil -lm -lSDL   -lm -o bin/tutorial02.out
